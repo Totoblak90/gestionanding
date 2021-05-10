@@ -1,2 +1,2 @@
 # Gestionanding
-an app to controle states on construction proyects
+An app to controle states on construction proyects
