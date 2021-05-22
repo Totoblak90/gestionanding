@@ -1,68 +1,9 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<ion-content
-  [fullscreen]="true"
-  color="warning"
-  class="ion-padding"
->
-
-<h1>Bienvenido!</h1>
-<ion-grid fixed >
-  <ion-row >
-    <ion-col 
-      sizeXl="6" sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12"
-    >
-  
-      <ion-card >
-        
-        <form class="login100-form"
-            autocomplete="off"
-            [formGroup]="miFormulario"
-            (ngSubmit)="login()"
-        >
-        <ion-card-header>
-          <ion-card-title class="login100-form-title p-b-49">Login</ion-card-title>
-        </ion-card-header>
-    
-        <ion-card-content>
-          
-          <div class="wrap-input100 m-b-23">
-              <span class="label-input100">Email</span>
-              <input class="input100"
-                     type="email" 
-                     formControlName="email"
-                     placeholder="Ingrese su email">
-              <span class="focus-input100"></span>
-          </div>
-      
-          <div class="wrap-input100">
-              <span class="label-input100">Password</span>
-              <input class="input100"
-                     type="password"
-                     formControlName="password"
-                     placeholder="Ingrese su contraseña">
-              <span class="focus-input100"></span>
-          </div>
-    
-          <div class="text-right p-t-8 p-b-31"></div>
-          
-          <div class="container-login100-form-btn">
-              <div class="wrap-login100-form-btn">
-                  <div class="login100-form-bgbtn"></div>
-                  <button class="login100-form-btn" type="submit" [disabled]="miFormulario.invalid">
-                      Login
-                  </button>
-              </div>
-          </div>
-    
-        </ion-card-content>
-                        
-     
-        </form>
-    
-      </ion-card>
-  
-    </ion-col>
-  </ion-row>
-</ion-grid>
+<ion-content>
 
 </ion-content>
