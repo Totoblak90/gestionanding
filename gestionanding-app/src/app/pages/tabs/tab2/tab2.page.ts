@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,22 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(
+    private fb: FormBuilder,
+    private router: Router
+  ) {}
+
+  formularioSendEmail: FormGroup = this.fb.group({
+    email: ['', [Validators.email]],
+    contenido: ['', [Validators.minLength(10)]]
+  })
+
+  onClick() {
+    this.router.navigateByUrl('home')
+  }
+
+  sendEmail() {
+    console.log('mail enviado')
+  }
 
 }

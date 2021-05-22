@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+import {MatTableModule} from '@angular/material/table';
+
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +11,14 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  dataSource=["Vildom"]
+
+  constructor(
+    private router: Router
+  ) {}
+
+  onClick() {
+    this.router.navigateByUrl('home')
+  }
 
 }

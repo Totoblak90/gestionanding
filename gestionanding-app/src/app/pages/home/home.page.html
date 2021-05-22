@@ -1,9 +1,36 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content
+  color="warning"
+  [fullscreen]="true"
+  class="ion-padding"
+>
 
-<ion-content>
+<h1>Bienvenido</h1>
+
+<ion-card class="ion-padding">
+
+  <ion-card-header>
+    <ion-card-title>Login</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <form
+      [formGroup]="miFormulario"
+      autocomplete="off"
+    >
+
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" placeholder="example@example.com" formControlName="email"></ion-input>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" placeholder="Escribe tu constraseña" formControlName="password"></ion-input>
+
+      <ion-button type="submit" expand="block" (click)="onSubmit()">
+        Submit
+      </ion-button>
+    </form>
+
+  </ion-card-content>
+  
+</ion-card>
 
 </ion-content>
