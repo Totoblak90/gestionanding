@@ -6,13 +6,19 @@ import { Tab1Page } from './tab1.page';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
+import {MatTableModule} from '@angular/material/table';
+
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+    MatTableModule
   ],
-  declarations: [Tab1Page]
+  declarations: [
+    Tab1Page
+  ]
 })
 export class Tab1PageModule {}

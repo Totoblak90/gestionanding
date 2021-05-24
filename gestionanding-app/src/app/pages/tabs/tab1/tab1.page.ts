@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
-import {MatTableModule} from '@angular/material/table';
-
+import { Tabla } from './interfaces/interfaces';
 
 @Component({
   selector: 'app-tab1',
@@ -11,7 +9,8 @@ import {MatTableModule} from '@angular/material/table';
 })
 export class Tab1Page {
 
-  dataSource=["Vildom"]
+  displayedColumns: string[] = ['numero', 'fecha', 'realizado por', 'estado'];
+  dataSource: Tabla[] = [];
 
   constructor(
     private router: Router
